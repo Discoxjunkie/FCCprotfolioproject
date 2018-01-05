@@ -1,3 +1,17 @@
 body {
   text-align: center;
 }
+
+header {
+
+}
+
+header .jumbotron{
+  /*height: 50rem;*/
+  background-image: url("images/luca-bravo-210213.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: 100%;
+  color:white;
+}
