@@ -7,46 +7,69 @@
     <title>Jaleesa's FCC portfolio project</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
   </head>
 
 <body>
 
-  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
-      <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Brand</a>
-        </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">about <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">work</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container  -->
-    </nav>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Jaleesa Scotland</a>
+          </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#about">about <span class="sr-only">(current)</span></a></li>
+              <li><a href="#work">work</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container  -->
+      </nav>
 
-
-    <header>
+    <header id="about">
       <div class="jumbotron">
         <div class="container">
           <h1>Hey there.</h1>
-          <img src="images/aboutme1.jpg" alt="..." class="img-circle">
-          <p>My name is Jaleesa, and I am a designer and budding font-end web developer. Take a look around and preview someof my work. If you like what you see feel free to give me shout in the contact section.</p>
+          <img src="images/aboutme1.jpg" alt="..." class="img-circle img-responsive center-block">
+          <p>My name is Jaleesa, and I am a designer and budding font-end web developer. Take a look around and preview some of my work. If you like what you see feel free to give me shout in the contact section.</p>
         </div>
       </div>
     </header>
 
-    <section class="work container">
-      <h2>Here is a little bit of my work</h2>
+    <section class="work" id="work">
+      <div class="container">
+        <h2>Here is a little bit of my work</h2>
+        <div class="row">
+          <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+              <img src="images/placeholder.jpg" alt="...">
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+              <img src="images/placeholder.jpg" alt="...">
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+              <img src="images/placeholder.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img src="images/placeholder.jpg" alt="...">
+          </a>
+        </div>
+      </div>
       <div class="row">
         <div class="col-xs-6 col-md-3">
           <a href="#" class="thumbnail">
@@ -67,15 +90,61 @@
         <a href="#" class="thumbnail">
           <img src="images/placeholder.jpg" alt="...">
         </a>
+      </div>
     </div>
     </section>
 
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class=row>
+          <div class="col-md-6 col-lg-6 col-sm-12">
+            <h2> Like what you see? give me shout!</h2>
+            <p class="lead"> Feel free to leave me a note, or visit me on social by clicking the buttons below.</p>
+            <a href="https://twitter.com/DISCOxjunkie" target="_blank">
+              <i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/discoxjunk/?hl=en" target="_blank">
+              <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/Discoxjunkie" target="_blank">
+              <i class="fa fa-github fa-4x" aria-hidden="true"></i>
+            </a>
+          </div>
 
-    <section class="contact container">
+          <div class="row">
+            <div class="ol-md-6 col-lg-6 col-sm-12">
+            <div class="form-group">
+              <label for="usr">Name:</label>
+              <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="text" class="form-control" id="pwd">
+            </div>
+            <div class="form-group">
+              <label for="comment">Comment:</label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <button type="button" class="btn btn-default">Submit</button>
+
+
+          </div>
+        </div>
+        </div>
+      </div>
     </section>
+
     <footer>
+      <div class="container">
+        <i class="fa fa-copyright" aria-hidden="true"></i>
+        <small class="text-left">Jaleesa Scotland 2018</small>
+      </div>
+
     </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/d9686bfd7b.js"></script>
+    <script src ="main.js"></script>
   </body>
 </html>

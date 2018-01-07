@@ -2,16 +2,67 @@ body {
   text-align: center;
 }
 
-header {
+a {
+  color:inherit;
+}
 
+header img {
+  height: 20rem;
+  width: 20rem;
+}
+
+h1,h2,li {
+  font-family: 'Fjalla One', sans-serif;
 }
 
 header .jumbotron{
   /*height: 50rem;*/
-  background-image: url("images/luca-bravo-210213.jpg");
-  background-repeat: no-repeat;
+  background-image: url("images/markus-spiske-445255.jpg");
+  background-position: center center;
+  background-repeat:  no-repeat;
   background-attachment: fixed;
-  background-position: 50% 50%;
-  background-size: 100%;
+  background-size:  cover;
   color:white;
+  padding-top:15rem;
+  padding-bottom: 15rem;
+  margin-bottom: 0;
+}
+
+.work {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: #F0EBD8;
+  margin-top: 0;
+
+}
+
+.work h2 {
+  padding-bottom: 5rem;
+}
+
+
+.contact {
+  background-color: #1C2541;
+  color:#E1FAF9;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: left;
+}
+
+
+
+.contact i {
+  padding-right: 2rem;
+
+}
+
+.contact i:hover {
+  color: #1A1B25;
+}
+
+footer {
+  padding-top:2rem;
+  padding-bottom: 2rem;
+  background-color: #1A1B25;
+  color: #E1FAF9;
 }
